@@ -10,32 +10,35 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <style>
+    <!-- <style>
       #qrcode {
         width: 160px;
         height: 160px;
         margin-top: 15px;
       }
-    </style>
+    </style> -->
     <title class="display-6">QR CODE</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
-    <div class="container">
-      <h1>QR CODE GENERATOR</h1>
+    <div id="container" class="container border p-5 m-5">
+      <h1 class="display-6 text-center">QR CODE GENERATOR</h1>
       <form action="" id="form">
         <div class="mb-3">
           <label for="url" class="form-label">URL:</label>
-          <input
-            type="url"
-            class="form-control"
-            id="url"
-            placeholder="Enter URL"
-          />
+          <span>
+            <input
+              type="url"
+              class="form-control"
+              id="url"
+              placeholder="Enter URL"
+            />
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </span>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      <div id="qrcode"></div>
+      <div id="qrcode" class="m-3"></div>
+      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
     </div>
   </body>
 
